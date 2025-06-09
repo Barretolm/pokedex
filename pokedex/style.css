@@ -19,10 +19,12 @@ header{
     justify-content: center;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(216, 216, 216);
     border-radius: 10%;
     box-shadow: rgba(0, 0, 0, 0.466);
+    display: none;
 }
+
 
 .img-card{
 background-image: url(fundo.jpg);
