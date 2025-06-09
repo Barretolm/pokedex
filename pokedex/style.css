@@ -1,11 +1,18 @@
 header{
-    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--altura-header);
+    padding-top: 5px;
     align-items: flex-start;
-    background-color: rgb(139, 0, 0);
-    height: 250px;
+    background-color: rgb(99, 0, 0);
+    height: 100px;
     width: 100%;
+
 }
 .container{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +30,7 @@ header{
     border-radius: 10%;
     box-shadow: rgba(0, 0, 0, 0.466);
     display: none;
+    padding-top: 50px;
 }
 
 
