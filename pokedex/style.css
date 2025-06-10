@@ -15,14 +15,17 @@ header{
     z-index: 1000;
 }
 
+body{
+    background-color: black;
+}
 .img-header{
     align-items: center;
     height: 70px; 
     width: 170px;
 }
 .consulta{
-
-    top: 100px;
+    left: 0;
+    right: 0;
     color: #FFF;
     background-color: rgba(63, 63, 63, 0.61);
     border-radius: 15%;
