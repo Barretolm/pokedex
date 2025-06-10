@@ -13,22 +13,25 @@
     <header>
         <img src="pokedex logo.webp" height="100px" width="200px"/>
     </header>
-    <label>Digite o nome ou numero do Pokémon</label>
-    <input onkeydown="ValidarTexto()" type="text" name="pokemon" id="pokemon" class="campo">
-    <Button type="button" onclick="Clicar()">Procurar</Button>
 
-    <main>
-    <div class="container">
-    <div class="card-pokemon">
-
-        <img src="" id="imagem" height="300px" width="250px" class="img-card" />
-        <br/>
-        <h3 id="num"></h3><h3 id="name"></h3>
-        <h3 id="tipo"></h4>
-
-    </div>
-    </div>
+    
+        <div class="consulta">
+        <label >Digite o nome ou numero do Pokémon</label>
+        <input onkeydown="ValidarTexto()" type="text" name="pokemon" id="pokemon" class="campo">
+        <Button type="button" onclick="Clicar()">Procurar</Button>
+         </div> 
+     <main>    
+            <div class="container" id="pokemon-info" style="display: none;">
+              <div class="card-pokemon">
+             <img src="" id="imagem" height="300px" width="250px" class="img-card" />
+               <br/>
+                <h3 id="num"></h3>
+                <h3 id="name"></h3>
+              <h3 id="tipo"></h3>
+            </div>
+        </div>
     </main>
+    
 
     <script src="script.js"></script>
 </body>
