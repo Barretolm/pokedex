@@ -42,12 +42,14 @@ function Clicar() {
             document.getElementById('num').textContent = data.order;
             document.getElementById('imagem').src = data.sprites.other['official-artwork'].front_default;
             document.getElementById('tipo').textContent = tipoIngles = data.types[0].type.name;
+            
 
             const tipoTraduzido = tiposPT[tipoIngles] || tipoIngles;
             tipo.textContent = "tipo " + tipoTraduzido;
 
+
             // torna a div visível
-            pokemonInfo.style.display = 'flex'; // ou 'block', dependendo do layout desejado
+            pokemonInfo.style.display = 'flex'; 
         })
         .catch(error => {
             console.error('Erro: ', error);
