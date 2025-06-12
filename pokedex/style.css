@@ -23,6 +23,27 @@ body{
     height: 70px; 
     width: 170px;
 }
+
+
+input{
+    margin-top: 5px;
+}
+button {
+    margin-top: 5px;
+    background-color: #af0000; 
+    color: rgb(255, 255, 255);          
+    padding: 5px 10px;       
+    border: none;             
+    border-radius: 5px;      
+    cursor: pointer;          
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;          
+    transition: background-color 0.3s ease; 
+  }
+  
+  button:hover {
+    background-color: #9c0000; 
+  }
 .consulta{
     margin-top: 70px;
     color: #FFF;
@@ -34,7 +55,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100px;
+    height: 110px;
     width: 250px;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -52,7 +73,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 500px;
+    height: 450px;
     width: 250px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
