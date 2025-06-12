@@ -17,7 +17,7 @@
     <main>
         <div class="consulta">
         <label >Digite o nome ou número do Pokémon</label>
-        <input onkeydown="ValidarTexto()" type="text" name="pokemon" id="pokemon" class="campo" placeholder="Ex: Pikachu">
+        <input onkeydown="" type="text" name="pokemon" id="pokemon" class="campo" placeholder="Ex: Pikachu ou 25">
         <Button type="button" onclick="Clicar()">Procurar</Button>
          </div> 
         <div class="container" id="pokemon-info" style="display: none;">
@@ -27,8 +27,13 @@
                 <h3 id="num"></h3>
                 <h3 id="name"></h3>
                 <h3 id="tipo"></h3>
-                <h4 id="stats"></h4>
             </div>
+
+            <div style="margin-top: 15px;">
+                <button id="anterior">Anterior</button>
+                <button id="proximo">Próximo</button>
+            </div>
+
         </div>
     </main>
     
