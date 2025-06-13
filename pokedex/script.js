@@ -25,12 +25,12 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 } // deixa a primeira letra do pokemon maiuscula
 
-//async function executa operações que demoram um tempo para terminar como a propria pokeapi
+//async function executa operações que demoram um tempo para terminar como a propria pokeapi (nao sei se a necessidade mas vi que é bom)
 
 async function carregarPokemon(pokemon) {
     const pokemonInfo = document.getElementById('pokemon-info');
 
-    //tenta executar o código que pode dar problema
+  
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toString().toLowerCase()}`);
         if (!response.ok) throw new Error('Pokémon não encontrado');
@@ -64,6 +64,14 @@ function Clicar() {
     carregarPokemon(input);
 }
 
+const input = document.getElementById('pokemon')
+document.getElementById('pokemon').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      Clicar();
+    }
+  });
+
 document.getElementById('anterior').addEventListener('click', () => {
     if (currentPokemonId && currentPokemonId > 1) {
         carregarPokemon(currentPokemonId - 1);
@@ -73,7 +81,7 @@ document.getElementById('anterior').addEventListener('click', () => {
 });
 
 document.getElementById('proximo').addEventListener('click', () => {
-    const maxPokemonId = 1010; // ou limite que quiser
+    const maxPokemonId = 1010; 
     if (currentPokemonId && currentPokemonId < maxPokemonId) {
         carregarPokemon(currentPokemonId + 1);
     } else {

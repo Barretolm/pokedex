@@ -15,8 +15,12 @@ header{
     z-index: 1000;
 }
 body{
-    background-image: url(fundo-main.jpg); 
-    background-size: 100% 100%;
+    background-image: url("fundo-main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 .img-header{
     align-items: center;
@@ -99,4 +103,9 @@ body{
     flex-direction: column; 
     background-color: #FFF;
 
+}
+
+
+.pikachu{
+    float:right;
 }
